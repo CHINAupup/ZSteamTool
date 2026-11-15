@@ -27,8 +27,8 @@ jobs:
       - name: Build Release
         run: cmake --build build --config Release
 
-      - name: Build Debug
-        run: cmake --build build --config Debug
+      # - name: Build Debug
+      #   run: cmake --build build --config Debug
 
       - name: Generate changelog
         id: changelog
