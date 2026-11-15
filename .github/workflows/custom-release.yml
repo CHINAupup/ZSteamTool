@@ -41,10 +41,10 @@ jobs:
             echo 'EOF'
           } >> $GITHUB_OUTPUT
 
-      # - name: Create tag
-      #   run: |
-      #     git tag ${{ github.event.inputs.version }}
-      #     git push origin ${{ github.event.inputs.version }}
+      - name: Create tag
+        run: |
+          git tag ${{ github.event.inputs.version }}
+          git push origin ${{ github.event.inputs.version }}
 
       # Package layout matches the published release:
       #   Debug\ / Release\ (three DLLs each) + opensteamtool.toml
