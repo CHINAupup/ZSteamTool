@@ -1,4 +1,4 @@
-name: Build
+name: Build-Custom
 run-name: ${{ github.event.inputs.version }} Build
 
 on:
